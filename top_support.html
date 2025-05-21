@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Top Support Overlay für Tikfinity</title>
+<style>
+  body {
+    margin: 0;
+    background: transparent;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  #overlay {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  #top-support {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #top-support .crown {
+    width: 40px;
+    height: 40px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Golden_crown_icon.svg/1024px-Golden_crown_icon.svg.png') no-repeat center/contain;
+  }
+  #gift-icon {
+    width: 60px;
+    height: 60px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+  }
+  #username {
+    font-size: 28px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div id="overlay">
+  <div id="top-support">
+    <div class="crown"></div>
+    <div>Top Support</div>
+  </div>
+  <div id="gift-icon"></div>
+  <div id="username">Anna123</div>
+</div>
+
+<script>
+  // Diese Datei zeigt eine feste Demo-Spende mit >1000 Coins
+  // Für echte Daten muss Tikfinity die Werte übergeben
+</script>
+
+</body>
+</html>
